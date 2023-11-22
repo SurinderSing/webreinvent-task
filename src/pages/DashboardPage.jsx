@@ -17,7 +17,7 @@ const DashboardPage = () => {
           payload: false,
         });
         if (id) {
-          alert("User with id " + " " + id + " " + "Logedin Successfully");
+          alert("Fetced User id " + " " + id);
         }
       } catch (error) {
         console.log(error);
