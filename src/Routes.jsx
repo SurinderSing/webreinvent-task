@@ -48,12 +48,13 @@ const Router = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route exact path="/signin" element={<SignInPage />} />
+          <Route exact path="/signup" element={<SignUpPage />} />
           {privateRoutes.map((route, index) => {
             return (
               <Route
                 key={index}
+                exact
                 path={route?.path}
                 element={<PrivateRoute>{route?.element}</PrivateRoute>}
               />

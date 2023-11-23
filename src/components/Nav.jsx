@@ -15,18 +15,16 @@ export default function Nav() {
   };
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
+      <Link to="/dashboard">
+        <div style={{ marginRight: 20 }}>Dashboard</div>
+      </Link>
       {isAuthenticated && (
-        <>
-          <Link to="/dashboard">
-            <div style={{ marginRight: 20 }}>Dashboard</div>
-          </Link>
-          <button
-            onClick={handleLogout}
-            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md mr-4"
-          >
-            Logout
-          </button>
-        </>
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md mr-4"
+        >
+          Logout
+        </button>
       )}
       <Link to="/signup">
         <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
