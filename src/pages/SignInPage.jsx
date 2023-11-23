@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useLayoutEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import SignInForm from "../components/SignInForm";
@@ -10,7 +10,7 @@ const SignInPage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isAuthenticated) {
       navigate("/dashboard");
     }
