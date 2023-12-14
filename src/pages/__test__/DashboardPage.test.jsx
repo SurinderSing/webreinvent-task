@@ -33,6 +33,6 @@ test("WHEN singin is passed THEN Dashboard is rendered", async () => {
     expect(screen.queryByText("Loading...")).not.toBeInTheDocument();
   });
 
-  // Ensure rendering of DashboardPage with user id
+  // Ensure rendering of DashboardPage
   expect(screen.getByText(/Dashboard Page/i)).toBeInTheDocument();
 });
