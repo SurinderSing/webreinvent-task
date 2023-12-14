@@ -65,7 +65,9 @@ export default function SignUpForm({ dispatch, navigate }) {
 
   return (
     <div className="max-w-md mx-auto mt-8 p-8 border rounded-md shadow-lg bg-white">
-      <h2 className="text-2xl font-semibold mb-6">Sign Up</h2>
+      <h2 className="text-2xl font-semibold mb-6" data-testid="signup-form">
+        Sign Up
+      </h2>
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4">
           <div>

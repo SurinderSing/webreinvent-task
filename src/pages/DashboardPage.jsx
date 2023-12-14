@@ -17,7 +17,7 @@ const DashboardPage = () => {
           payload: false,
         });
         if (id) {
-          alert("Fetced User id " + " " + id);
+          alert("Fetced User id" + " " + id);
         }
       } catch (error) {
         console.log(error);

@@ -50,8 +50,11 @@ export default function SignInForm({ dispatch, navigate }) {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-8 border rounded-md shadow-lg bg-white">
-      <h2 className="text-2xl font-semibold mb-6">Sign In</h2>
+    <div
+      className="max-w-md mx-auto mt-8 p-8 border rounded-md shadow-lg bg-white"
+      data-testid="signin-page"
+    >
+      <h2 className="text-2xl font-semibold mb-6" data-testid="signin-form">Sign In</h2>
       <form onSubmit={handleSubmit}>
         <div className="mt-4">
           <label
